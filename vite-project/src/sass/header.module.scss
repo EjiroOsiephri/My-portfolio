@@ -1,0 +1,50 @@
+.main-header-section {
+  display: flex;
+  margin: 1em 0.6em 0 0.6em;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header-section h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.navLists > ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+}
+li {
+  margin-left: 1.3em;
+}
+li a {
+  text-decoration: none;
+  outline: none;
+}
+.hamburger-section {
+  display: none;
+}
+
+@media screen and (max-width: 1040px) {
+  .navLists > ul {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    align-items: center;
+  }
+  li {
+    padding: 1rem 0;
+  }
+  li > a {
+    font-size: 1.5rem;
+  }
+  .hamburger-section {
+    display: initial;
+  }
+}
