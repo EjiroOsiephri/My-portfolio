@@ -13,15 +13,30 @@ const Footer = () => {
       <main className={Classes["footer-section"]}>
         <section className={Classes["personal-info"]}>
           <div className={Classes["home"]}>
-            <FaHome />
+            <FaHome
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
             <p>Yaba,Lagos</p>
           </div>
           <div className={Classes["phone"]}>
-            <FaPhone />
+            <FaPhone
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
             <p>+2347065142095</p>
           </div>
           <div className={Classes["gmail"]}>
-            <FaPhone />
+            <FaPhone
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
             <p>osiephriejiro765@gmail.com</p>
           </div>
         </section>
@@ -31,7 +46,26 @@ const Footer = () => {
             This is Ejiro Osiephri , Front end developer. i enjoy collaborating
             with teams and aiding websites stability and functionality.
           </h4>
-          <div className="socials"></div>
+          <div className={Classes["socials"]}>
+            <FaFacebook
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
+            <FaTwitter
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
+            <FaLinkedin
+              style={{
+                color: "white",
+                fontSize: "25px",
+              }}
+            />
+          </div>
         </section>
       </main>
     </>

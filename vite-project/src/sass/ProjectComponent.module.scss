@@ -9,7 +9,7 @@
   margin-bottom: 1.3em;
 }
 .project-div {
-  width: 400px;
+  width: 350px;
   background-color: rgba(128, 128, 128, 0.156);
   padding: 1em;
 }
@@ -46,7 +46,7 @@ h1 {
   cursor: pointer;
   letter-spacing: 1.3px;
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1040px) {
   .Project-section {
     flex-direction: column;
     gap: 40px;
