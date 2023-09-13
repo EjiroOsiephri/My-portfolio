@@ -1,6 +1,6 @@
 .main-header-section {
   display: flex;
-  margin: 1em 0.6em 0 0.6em;
+  margin: 1em 4em 0 0.6em;
   justify-content: space-between;
   align-items: center;
 }
@@ -43,5 +43,8 @@
   }
   .hamburger-section {
     display: initial;
+  }
+  .main-header-section {
+    margin-right: 0.5em;
   }
 }
