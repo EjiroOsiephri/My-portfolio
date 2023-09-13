@@ -43,15 +43,22 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.btn-container {
-  position: absolute;
-  left: 50%;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.content h1 {
+  font-size: 3rem;
+  padding: 0.6rem 0 1.5rem;
+}
+.content p {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.content .btn {
+  margin: 1rem 0.2rem;
 }
 @media screen and (max-width: 678px) {
   .hero-img {
     height: 100vh;
+  }
+  .content h1 {
+    font-size: 2rem;
   }
 }

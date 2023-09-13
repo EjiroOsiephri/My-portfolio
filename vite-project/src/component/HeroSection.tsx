@@ -1,5 +1,6 @@
 import HeroImg from "../assets/unsplash-KwJ3FEuwRlE-unsplash.jpg";
 import Classes from "../sass/Hero.module.scss";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -11,10 +12,12 @@ const HeroSection = () => {
         <div className={Classes["content"]}>
           <p>Hi, I'm Ejiro</p>
           <h1>MERN STACK DEVELOPER</h1>
-        </div>
-        <div className={Classes["btn-container"]}>
-          <button className={Classes["btn"]}>Projects</button>
-          <button className={Classes["btn-light"]}>Contacts</button>
+          <button className={Classes["btn"]}>
+            <Link to="/project">Projects</Link>
+          </button>
+          <button className={Classes["btn-light"]}>
+            <Link to="/contact">Contacts</Link>
+          </button>
         </div>
       </main>
     </>
