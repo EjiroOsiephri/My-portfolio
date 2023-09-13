@@ -6,51 +6,52 @@ import { useState } from "react";
 const Header = () => {
   const [click, setClick] = useState(false);
 
-  function showTimes() {
-    setClick(false);
-  }
-
   function showHamburger() {
-    setClick(true);
+    setClick(!click);
   }
 
   return (
     <>
       <nav className={Classes["main-header-section"]}>
         <h1>Portfolio.</h1>
-        <section className={Classes["navLists"]}>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/project">Project</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </section>
-        <div className={Classes["hamburger-section"]}>
-          {!click && (
-            <FaBars
-              onClick={showHamburger}
+
+        <ul
+          style={
+            click
+              ? {
+                  left: "0",
+                }
+              : {}
+          }
+          className={Classes["navLists"]}
+        >
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/project">Project</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+        <div className={Classes["hamburger-section"]} onClick={showHamburger}>
+          {click ? (
+            <FaTimes
               style={{
                 color: "white",
-                cursor: "Pointer",
+                cursor: "pointer",
                 fontSize: "20px",
               }}
             />
-          )}
-          {click && (
-            <FaTimes
-              onClick={showTimes}
+          ) : (
+            <FaBars
               style={{
                 color: "white",
-                cursor: "Pointer",
+                cursor: "pointer",
                 fontSize: "20px",
               }}
             />
