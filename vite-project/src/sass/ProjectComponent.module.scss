@@ -1,0 +1,59 @@
+.Project-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-component-main > h1 {
+  text-align: center;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+}
+.project-div {
+  width: 400px;
+  background-color: rgba(128, 128, 128, 0.156);
+  padding: 1em;
+}
+.project-div > img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.project-div > h3 {
+  font-size: 18px;
+  margin-top: 1em;
+  font-weight: 200;
+  margin-bottom: 1em;
+  line-height: 2;
+}
+.project-div > h1 {
+  margin-top: 0.85em;
+}
+.project-div > h3,
+h1 {
+  text-align: center;
+}
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: white;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1.3px;
+}
+@media screen and (max-width: 678px) {
+  .Project-section {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-div {
+    width: 100%;
+  }
+}
