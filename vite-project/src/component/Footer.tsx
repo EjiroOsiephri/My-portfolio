@@ -31,12 +31,6 @@ const Footer = () => {
             <p>+2347065142095</p>
           </div>
           <div className={Classes["gmail"]}>
-            <FaPhone
-              style={{
-                color: "white",
-                fontSize: "25px",
-              }}
-            />
             <p>osiephriejiro765@gmail.com</p>
           </div>
         </section>

@@ -33,9 +33,7 @@
 .gmail {
   display: flex;
   margin-bottom: 2em;
-}
-.gmail > p {
-  margin-left: 0.8em;
+  margin-left: -1.1em;
 }
 .socials {
   cursor: pointer;
@@ -43,6 +41,7 @@
   max-width: 200px;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 878px) {
   .footer-section {
     flex-direction: column;
