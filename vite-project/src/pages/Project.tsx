@@ -1,3 +1,4 @@
+import Footer from "../component/Footer";
 import Header from "../component/Header";
 import ProjectComponentPage from "../component/ProjectComponentPage";
 import ProjectHero from "../component/ProjectHero";
@@ -8,6 +9,7 @@ const Project = () => {
       <Header />
       <ProjectHero />
       <ProjectComponentPage />
+      <Footer />
     </>
   );
 };

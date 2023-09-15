@@ -1,4 +1,4 @@
-import HeroImg from "../assets/unsplash-KwJ3FEuwRlE-unsplash.jpg";
+import HeroImg from "../assets/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg";
 import Classes from "../sass/Hero.module.scss";
 
 const ProjectHero = () => {
@@ -6,7 +6,7 @@ const ProjectHero = () => {
     <>
       <main className={Classes["hero"]}>
         <div className={Classes["mask"]}>
-          <img src={HeroImg} className={Classes["hero-img"]} alt="" />
+          <img src={HeroImg} className={Classes["hero-img"]} alt="HeroImg" />
         </div>
         <div className={Classes["content"]}>
           <h1>Projects.</h1>

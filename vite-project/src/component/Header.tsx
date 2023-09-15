@@ -1,10 +1,15 @@
 import Classes from "../sass/header.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink, useMatch } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { useState } from "react";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+
+  const isHomeActive = useMatch("/");
+  const isProjectActive = useMatch("/project");
+  const isContactActive = useMatch("/contact");
+  const isAboutActive = useMatch("/about");
 
   function showHamburger() {
     setClick(!click);
@@ -26,16 +31,33 @@ const Header = () => {
           className={Classes["navLists"]}
         >
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={isHomeActive ? Classes.active : ""}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/project">Project</Link>
+            <NavLink
+              to="/project"
+              className={isProjectActive ? Classes.active : ""}
+            >
+              Project
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink
+              to="/about"
+              className={isAboutActive ? Classes.active : ""}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink
+              to="/contact"
+              className={isContactActive ? Classes.active : ""}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
         <div className={Classes["hamburger-section"]} onClick={showHamburger}>

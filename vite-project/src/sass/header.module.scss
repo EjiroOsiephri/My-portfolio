@@ -26,6 +26,9 @@
 .hamburger-section {
   display: none;
 }
+.active {
+  border-bottom: 2px solid white;
+}
 @media screen and (max-width: 1040px) {
   .navLists {
     flex-direction: column;
