@@ -1,5 +1,6 @@
 import HeroImg from "../assets/altumcode-XMFZqrGyV-Q-unsplash.jpg";
 import Classes from "../sass/Hero.module.scss";
+import PhotoImg from "../assets/photo_2023-09-09_13-03-33-4a7a6b5f.jpg";
 
 const AboutHero = () => {
   return (
@@ -19,11 +20,13 @@ const AboutHero = () => {
               user-friendly and visually appealing web experiences. With a keen
               eye for design and a strong command of web technologies, I
               specialize in bringing creative concepts to life in the digital
-              realm fro my clients
-              <button className={Classes["btn"]}>Contact</button>
+              realm for my clients
+              <button>Contact</button>
             </h4>
           </section>
-          <section className={Classes["aboutImg"]}></section>
+          <section className={Classes["aboutImg"]}>
+            <img src={PhotoImg} alt="Photoimg" />
+          </section>
         </div>
       </main>
     </>
