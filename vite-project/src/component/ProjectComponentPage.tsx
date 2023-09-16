@@ -2,6 +2,7 @@ import Classes from "../sass/ProjectComponent.module.scss";
 import First from "../assets/Screenshot (3).png";
 import Second from "../assets/Screenshot (4).png";
 import Third from "../assets/Screenshot (5).png";
+import Four from "../assets/Screenshot (7).png";
 import { useState } from "react";
 
 const ProjectComponentPage = () => {
@@ -24,6 +25,12 @@ const ProjectComponentPage = () => {
       description:
         "Embark on the journey of a lifetime with Space tourism website, where the boundaries of Earth are just the beginning. We are your gateway to the stars, offering a unique and awe-inspiring space travel experience that will leave you forever changed.",
     },
+    {
+      img: Four,
+      headerText: "Multi Step Form",
+      description:
+        "A multi-step form project is a web application or user interface design that breaks down a complex or lengthy data input process into a series of smaller, more manageable steps or sections. This approach aims to improve user experience and engagement by guiding users through the information-gathering process one step at a time, making it easier for them to complete the form.",
+    },
   ];
 
   const [view, setView] = useState<string>();
@@ -39,6 +46,9 @@ const ProjectComponentPage = () => {
     if (item === 2) {
       setView("https://github.com/EjiroOsiephri/Space-tourism-website-main");
     }
+    if (item === 3) {
+      setView("https://github.com/EjiroOsiephri/multi-step-form-main");
+    }
   }
 
   function showSource(item: number) {
@@ -50,6 +60,9 @@ const ProjectComponentPage = () => {
     }
     if (item === 2) {
       setSource("https://singular-sherbet-6dddf9.netlify.app/");
+    }
+    if (item === 3) {
+      setSource("https://roaring-custard-af4905.netlify.app/");
     }
   }
 
@@ -78,7 +91,7 @@ const ProjectComponentPage = () => {
                     className={Classes["btn"]}
                   >
                     <a href={view} target="_blank" rel="noopener noreferrer">
-                      View
+                      Source
                     </a>
                   </button>
                   <button
@@ -88,7 +101,7 @@ const ProjectComponentPage = () => {
                     className={Classes["btn"]}
                   >
                     <a href={source} target="_blank" rel="noopener noreferrer">
-                      Source
+                      View
                     </a>
                   </button>
                 </div>
