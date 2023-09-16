@@ -1,4 +1,5 @@
 import AboutHero from "../component/AboutHero";
+import Footer from "../component/Footer";
 import Header from "../component/Header";
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
     <>
       <Header />
       <AboutHero />
+      <Footer />
     </>
   );
 };

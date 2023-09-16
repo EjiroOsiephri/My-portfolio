@@ -1,8 +1,10 @@
 import HeroImg from "../assets/altumcode-XMFZqrGyV-Q-unsplash.jpg";
 import Classes from "../sass/Hero.module.scss";
 import PhotoImg from "../assets/photo_2023-09-09_13-03-33-4a7a6b5f.jpg";
+import { useNavigate } from "react-router";
 
 const AboutHero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <main className={Classes["hero"]}>
@@ -21,7 +23,13 @@ const AboutHero = () => {
               eye for design and a strong command of web technologies, I
               specialize in bringing creative concepts to life in the digital
               realm for my clients
-              <button>Contact</button>
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              >
+                Contact
+              </button>
             </h4>
           </section>
           <section className={Classes["aboutImg"]}>
