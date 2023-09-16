@@ -3,6 +3,7 @@ import First from "../assets/Screenshot (3).png";
 import Second from "../assets/Screenshot (4).png";
 import Third from "../assets/Screenshot (5).png";
 import Four from "../assets/Screenshot (7).png";
+import Five from "../assets/Screenshot (8).png";
 import { useState } from "react";
 
 const ProjectComponentPage = () => {
@@ -31,6 +32,12 @@ const ProjectComponentPage = () => {
       description:
         "A multi-step form project is a web application or user interface design that breaks down a complex or lengthy data input process into a series of smaller, more manageable steps or sections. This approach aims to improve user experience and engagement by guiding users through the information-gathering process one step at a time, making it easier for them to complete the form.",
     },
+    {
+      img: Five,
+      headerText: "Ejiro's kitchen",
+      description:
+        "Ejiro's Kitchen is a cozy and welcoming dining destination that offers a delightful culinary experience rooted in the rich flavors of Ejiro's cultural heritage. With a passion for cooking and a commitment to using fresh, locally sourced ingredients, Ejiro's Kitchen serves up a diverse menu of mouthwatering dishes that showcase the authentic flavors and traditions of the region.",
+    },
   ];
 
   const [view, setView] = useState<string>();
@@ -49,6 +56,9 @@ const ProjectComponentPage = () => {
     if (item === 3) {
       setView("https://github.com/EjiroOsiephri/multi-step-form-main");
     }
+    if (item === 4) {
+      setView("https://github.com/EjiroOsiephri/Building-a-food-order-app");
+    }
   }
 
   function showSource(item: number) {
@@ -63,6 +73,9 @@ const ProjectComponentPage = () => {
     }
     if (item === 3) {
       setSource("https://roaring-custard-af4905.netlify.app/");
+    }
+    if (item === 4) {
+      setSource("https://fascinating-begonia-e97bde.netlify.app/");
     }
   }
 
