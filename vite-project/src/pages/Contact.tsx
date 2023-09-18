@@ -1,4 +1,6 @@
+import ContactComponentPage from "../component/ContactComponentPage";
 import ContactSection from "../component/ContactHero";
+import Footer from "../component/Footer";
 import Header from "../component/Header";
 
 const Contact = () => {
@@ -6,6 +8,8 @@ const Contact = () => {
     <>
       <Header />
       <ContactSection />
+      <ContactComponentPage />
+      <Footer />
     </>
   );
 };
