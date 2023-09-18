@@ -41,24 +41,30 @@ const Footer = () => {
             with teams and aiding websites stability and functionality.
           </h4>
           <div className={Classes["socials"]}>
-            <FaFacebook
-              style={{
-                color: "white",
-                fontSize: "25px",
-              }}
-            />
-            <FaTwitter
-              style={{
-                color: "white",
-                fontSize: "25px",
-              }}
-            />
-            <FaLinkedin
-              style={{
-                color: "white",
-                fontSize: "25px",
-              }}
-            />
+            <a href="https://web.facebook.com/profile.php?id=100084961655525">
+              <FaFacebook
+                style={{
+                  color: "white",
+                  fontSize: "25px",
+                }}
+              ></FaFacebook>
+            </a>
+            <a href="https://twitter.com/Ejiro_TI?t=svDbQGRDBymtlN6aB_t4eQ&s=09">
+              <FaTwitter
+                style={{
+                  color: "white",
+                  fontSize: "25px",
+                }}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/ejiro-oghene-osiephri-frontend-developer-and-digital-marketer-1b3235269/">
+              <FaLinkedin
+                style={{
+                  color: "white",
+                  fontSize: "25px",
+                }}
+              />
+            </a>
           </div>
         </section>
       </main>
