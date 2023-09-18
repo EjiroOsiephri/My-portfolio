@@ -34,6 +34,11 @@
   cursor: pointer;
   letter-spacing: 1.3px;
 }
+.aboutImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .aboutImg > img {
   align-self: center;
   height: 300px;
