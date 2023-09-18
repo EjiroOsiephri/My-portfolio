@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </section>
         <section className={Classes["about-info"]}>
-          <p>About the company</p>
+          <p>About me</p>
           <h4>
             This is Ejiro Osiephri , Front end developer. i enjoy collaborating
             with teams and aiding websites stability and functionality.
